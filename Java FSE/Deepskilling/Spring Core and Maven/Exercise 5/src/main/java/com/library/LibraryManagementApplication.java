@@ -17,6 +17,10 @@ public class LibraryManagementApplication {
         // Test setup
         bookService.listBooks();
         
-        System.out.println("=== LibraryManagementApplication [Exercise 5] Completed Successfully ===");
+        System.out.println("\nLibrary Management Started.");
+        System.out.println("Book retrieved from repository: " + bookRepository.getBook());
+        
+        // Close context to prevent resource leak
+        ((org.springframework.context.support.ClassPathXmlApplicationContext) context).close();
     }
 }

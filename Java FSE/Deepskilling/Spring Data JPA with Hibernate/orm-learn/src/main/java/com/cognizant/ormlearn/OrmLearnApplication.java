@@ -1,6 +1,9 @@
 package com.cognizant.ormlearn;
 
+import java.math.BigDecimal;
 import java.util.List;
+import java.util.Optional;
+import java.util.Set;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -8,7 +11,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 import com.cognizant.ormlearn.model.Country;
+import com.cognizant.ormlearn.model.Department;
+import com.cognizant.ormlearn.model.Employee;
+import com.cognizant.ormlearn.model.Skill;
 import com.cognizant.ormlearn.service.CountryService;
+import com.cognizant.ormlearn.service.DepartmentService;
+import com.cognizant.ormlearn.service.EmployeeService;
+import com.cognizant.ormlearn.service.SkillService;
 import com.cognizant.ormlearn.service.exception.CountryNotFoundException;
 
 @SpringBootApplication
@@ -16,15 +25,23 @@ public class OrmLearnApplication {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrmLearnApplication.class);
     private static CountryService countryService;
+    private static DepartmentService departmentService;
+    private static EmployeeService employeeService;
+    private static SkillService skillService;
 
     public static void main(String[] args) {
         LOGGER.info("Starting OrmLearnApplication...");
         ApplicationContext context = SpringApplication.run(OrmLearnApplication.class, args);
         countryService = context.getBean(CountryService.class);
+        departmentService = context.getBean(DepartmentService.class);
+        employeeService = context.getBean(EmployeeService.class);
+        skillService = context.getBean(SkillService.class);
         
         LOGGER.info("Inside main - Spring Boot Application Context Loaded successfully.");
 
-        // Running testing methods sequentially to verify JPA operations
+        // ═══════════════════════════════════════════════════════════════
+        // Hands-On 1: Country CRUD Operations
+        // ═══════════════════════════════════════════════════════════════
         testGetAllCountries();
         testFindCountryByCode();
         testFindCountryByCodeNotFound();
@@ -32,9 +49,29 @@ public class OrmLearnApplication {
         testUpdateCountry();
         testDeleteCountry();
         testFindCountriesByNameContaining();
+
+        // ═══════════════════════════════════════════════════════════════
+        // Hands-On 2: O/R Mapping Demonstration
+        // ═══════════════════════════════════════════════════════════════
+        testGetAllDepartments();
+        testGetDepartmentWithEmployees();
+        testGetEmployeeWithSkills();
+        testGetAllSkills();
+
+        // ═══════════════════════════════════════════════════════════════
+        // Hands-On 3: JPQL / HQL and Native Query
+        // ═══════════════════════════════════════════════════════════════
+        testFindEmployeesWithHighSalary();
+        testFindEmployeesByDepartmentName();
+        testFindAllEmployeesOrderBySalary();
+        testFindEmployeesByNameKeyword();
         
         LOGGER.info("OrmLearnApplication executions completed successfully.");
     }
+
+    // ══════════════════════════════════════════════════════════════════
+    // Hands-On 1: Country CRUD
+    // ══════════════════════════════════════════════════════════════════
 
     private static void testGetAllCountries() {
         LOGGER.info("--- START: testGetAllCountries ---");
@@ -125,5 +162,107 @@ public class OrmLearnApplication {
             LOGGER.info("Country matches partial name search: {}", country);
         }
         LOGGER.info("--- END: testFindCountriesByNameContaining ---\n");
+    }
+
+    // ══════════════════════════════════════════════════════════════════
+    // Hands-On 2: O/R Mapping
+    // ══════════════════════════════════════════════════════════════════
+
+    private static void testGetAllDepartments() {
+        LOGGER.info("--- START: testGetAllDepartments ---");
+        List<Department> departments = departmentService.getAllDepartments();
+        LOGGER.debug("Fetched {} departments", departments.size());
+        for (Department dept : departments) {
+            LOGGER.info("Department: {}", dept);
+        }
+        LOGGER.info("--- END: testGetAllDepartments ---\n");
+    }
+
+    private static void testGetDepartmentWithEmployees() {
+        LOGGER.info("--- START: testGetDepartmentWithEmployees (Department ID: 1 - Engineering) ---");
+        Optional<Department> optDept = departmentService.findById(1);
+        if (optDept.isPresent()) {
+            Department dept = optDept.get();
+            LOGGER.info("Department: {}", dept);
+            List<Employee> employees = employeeService.findByDepartmentId(dept.getId());
+            LOGGER.debug("Found {} employees in department '{}'", employees.size(), dept.getName());
+            for (Employee emp : employees) {
+                LOGGER.info("  Employee: {}", emp);
+            }
+        } else {
+            LOGGER.warn("Department ID 1 not found.");
+        }
+        LOGGER.info("--- END: testGetDepartmentWithEmployees ---\n");
+    }
+
+    private static void testGetEmployeeWithSkills() {
+        LOGGER.info("--- START: testGetEmployeeWithSkills (Employee ID: 1 - Alice) ---");
+        Optional<Employee> optEmp = employeeService.findById(1);
+        if (optEmp.isPresent()) {
+            Employee emp = optEmp.get();
+            LOGGER.info("Employee: {}", emp);
+            Set<Skill> skills = emp.getSkills();
+            LOGGER.debug("Employee '{}' has {} skills", emp.getName(), skills.size());
+            for (Skill skill : skills) {
+                LOGGER.info("  Skill: {}", skill);
+            }
+        } else {
+            LOGGER.warn("Employee ID 1 not found.");
+        }
+        LOGGER.info("--- END: testGetEmployeeWithSkills ---\n");
+    }
+
+    private static void testGetAllSkills() {
+        LOGGER.info("--- START: testGetAllSkills ---");
+        List<Skill> skills = skillService.getAllSkills();
+        LOGGER.debug("Fetched {} skills", skills.size());
+        for (Skill skill : skills) {
+            LOGGER.info("Skill: {}", skill);
+        }
+        LOGGER.info("--- END: testGetAllSkills ---\n");
+    }
+
+    // ══════════════════════════════════════════════════════════════════
+    // Hands-On 3: JPQL / HQL and Native Query
+    // ══════════════════════════════════════════════════════════════════
+
+    private static void testFindEmployeesWithHighSalary() {
+        LOGGER.info("--- START: testFindEmployeesWithHighSalary (> $70,000) [JPQL] ---");
+        List<Employee> employees = employeeService.findEmployeesWithSalaryGreaterThan(new BigDecimal("70000"));
+        LOGGER.debug("Found {} employees with salary > $70,000", employees.size());
+        for (Employee emp : employees) {
+            LOGGER.info("  High-salary Employee: {}", emp);
+        }
+        LOGGER.info("--- END: testFindEmployeesWithHighSalary ---\n");
+    }
+
+    private static void testFindEmployeesByDepartmentName() {
+        LOGGER.info("--- START: testFindEmployeesByDepartmentName ('Engineering') [JPQL] ---");
+        List<Employee> employees = employeeService.findByDepartmentName("Engineering");
+        LOGGER.debug("Found {} employees in 'Engineering'", employees.size());
+        for (Employee emp : employees) {
+            LOGGER.info("  Engineering Employee: {}", emp);
+        }
+        LOGGER.info("--- END: testFindEmployeesByDepartmentName ---\n");
+    }
+
+    private static void testFindAllEmployeesOrderBySalary() {
+        LOGGER.info("--- START: testFindAllEmployeesOrderBySalary [Native Query] ---");
+        List<Employee> employees = employeeService.findAllOrderBySalaryDesc();
+        LOGGER.debug("Fetched {} employees ordered by salary DESC", employees.size());
+        for (Employee emp : employees) {
+            LOGGER.info("  Employee: {}", emp);
+        }
+        LOGGER.info("--- END: testFindAllEmployeesOrderBySalary ---\n");
+    }
+
+    private static void testFindEmployeesByNameKeyword() {
+        LOGGER.info("--- START: testFindEmployeesByNameKeyword ('al') [JPQL LIKE] ---");
+        List<Employee> employees = employeeService.findByNameContaining("al");
+        LOGGER.debug("Found {} employees with name containing 'al'", employees.size());
+        for (Employee emp : employees) {
+            LOGGER.info("  Matching Employee: {}", emp);
+        }
+        LOGGER.info("--- END: testFindEmployeesByNameKeyword ---\n");
     }
 }

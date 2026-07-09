@@ -1,0 +1,646 @@
+==========================================================
+VERIFICATION PROOF: JAVA FSE DEEPSKILLING MODULES
+==========================================================
+
+--- 1. DESIGN PATTERNS ---
+>> Ex 1: Singleton Pattern
+
+java : java.lang.UnsupportedClassVersionError: LoggerTest has been compiled by a more recent version of the Java 
+Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+At D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\verify_all.ps1:26 char:1
++ java -cp out LoggerTest 2>&1 | Out-String | Add-Content $ProofFile
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (java.lang.Unsup...ions up to 52.0:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" 
+
+>> Ex 2: Factory Method Pattern
+
+java : java.lang.UnsupportedClassVersionError: DocumentFactoryTest has been compiled by a more recent version of the 
+Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+At D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\verify_all.ps1:33 char:1
++ java -cp out DocumentFactoryTest 2>&1 | Out-String | Add-Content $Pro ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (java.lang.Unsup...ions up to 52.0:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" 
+
+>> Ex 3: Builder Pattern
+javac : src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+At D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\verify_all.ps1:39 char:1
++ javac -d out src\*.java 2>&1 | Out-String | Add-Content $ProofFile
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (src\Computer.ja...ng windows-1252:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+         ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+            ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+               ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                  ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                     ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                        ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                           ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                              ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                 ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                    ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                       ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                          ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                             ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                   ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                      ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                         ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                            ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                               ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                  ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                     ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                        ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                           ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                              ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                 ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                    ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                       ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                          ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                             ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                   ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                      ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                         ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                            ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                               ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                  ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                     ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+ ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+    ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+       ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+          ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+             ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                   ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                      ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                         ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                            ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                               ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                  ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                     ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                        ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                           ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                              ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                                 ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                                    ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                                       ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                                          ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                                             ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                                                ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                                                   ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                                                      ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                                                         ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                                                            ^
+src\Computer.java:78: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                       
+                                                                               ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+         ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+            ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+               ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                  ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                     ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                        ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                           ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                              ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                 ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                    ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                       ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                          ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                             ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                   ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                      ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                         ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                            ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                               ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                  ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                     ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                        ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                           ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                              ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                 ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                    ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                       ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                          ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                             ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                   ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                      ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                         ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                            ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                               ^
+src\Computer.java:80: error: unmappable character (0x90) for encoding windows-1252
+    // Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?G
+ò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?Gò?
+                                                                                                                  ^
+100 errors
+only showing the first 100 errors, of 128 total; use -Xmaxerrs if you would like to see more
+
+java : Error: Could not find or load main class ComputerBuilderTest
+At D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\verify_all.ps1:40 char:1
++ java -cp out ComputerBuilderTest 2>&1 | Out-String | Add-Content $Pro ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Error: Could no...uterBuilderTest:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+--- 2. ALGORITHMS & DATA STRUCTURES ---
+>> Ex 1: Inventory Management
+
+java : java.lang.UnsupportedClassVersionError: InventoryTest has been compiled by a more recent version of the Java 
+Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+At D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\verify_all.ps1:53 char:1
++ java -cp out InventoryTest 2>&1 | Out-String | Add-Content $ProofFile
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (java.lang.Unsup...ions up to 52.0:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" 
+
+>> Ex 2: Search Algorithms
+
+java : java.lang.UnsupportedClassVersionError: SearchTest has been compiled by a more recent version of the Java 
+Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+At D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\verify_all.ps1:60 char:1
++ java -cp out SearchTest 2>&1 | Out-String | Add-Content $ProofFile
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (java.lang.Unsup...ions up to 52.0:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" 
+
+>> Ex 3: Sorting Algorithms
+java : java.lang.UnsupportedClassVersionError: SortingTest has been compiled by a more recent version of the Java 
+Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+At D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\verify_all.ps1:67 char:1
++ java -cp out SortingTest 2>&1 | Out-String | Add-Content $ProofFile
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (java.lang.Unsup...ions up to 52.0:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" 
+
+>> Ex 6: Library Search
+
+java : java.lang.UnsupportedClassVersionError: LibraryTest has been compiled by a more recent version of the Java 
+Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+At D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\verify_all.ps1:74 char:1
++ java -cp out LibraryTest 2>&1 | Out-String | Add-Content $ProofFile
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (java.lang.Unsup...ions up to 52.0:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" 
+
+>> Ex 7: Financial Forecasting
+
+java : java.lang.UnsupportedClassVersionError: ForecastingTest has been compiled by a more recent version of the Java 
+Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+At D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\verify_all.ps1:81 char:1
++ java -cp out ForecastingTest 2>&1 | Out-String | Add-Content $ProofFi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (java.lang.Unsup...ions up to 52.0:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" 
+
+
+--- 3. SPRING DATA JPA (orm-learn) ---
+>> Building Spring Data JPA Project...
+
+--- 4. SPRING REST (country-rest-service) ---
+>> Compiling Spring REST Project...
+
+--- 5. MICROSERVICES ---
+>> Compiling Eureka Server...
+>> Compiling API Gateway...
+
+==========================================================
+VERIFICATION COMPLETED
+==========================================================

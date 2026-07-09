@@ -247,3 +247,52 @@ insert into country (co_code, co_name) values ('YE', 'Yemen');
 insert into country (co_code, co_name) values ('ZM', 'Zambia');
 insert into country (co_code, co_name) values ('ZW', 'Zimbabwe');
 insert into country (co_code, co_name) values ('AX', 'Åland Islands');
+
+-- Department data
+insert into department (dp_name) values ('Engineering');
+insert into department (dp_name) values ('Human Resources');
+insert into department (dp_name) values ('Marketing');
+insert into department (dp_name) values ('Finance');
+insert into department (dp_name) values ('Sales');
+
+-- Employee data
+insert into employee (em_name, em_salary, em_date_of_joining, em_dp_id) values ('Alice Johnson', 75000.00, '2020-03-15', 1);
+insert into employee (em_name, em_salary, em_date_of_joining, em_dp_id) values ('Bob Smith', 62000.00, '2019-07-22', 1);
+insert into employee (em_name, em_salary, em_date_of_joining, em_dp_id) values ('Carol White', 58000.00, '2021-01-10', 2);
+insert into employee (em_name, em_salary, em_date_of_joining, em_dp_id) values ('David Brown', 85000.00, '2018-11-05', 1);
+insert into employee (em_name, em_salary, em_date_of_joining, em_dp_id) values ('Eva Green', 52000.00, '2022-06-18', 3);
+insert into employee (em_name, em_salary, em_date_of_joining, em_dp_id) values ('Frank Lee', 71000.00, '2020-09-30', 4);
+insert into employee (em_name, em_salary, em_date_of_joining, em_dp_id) values ('Grace Hall', 67000.00, '2021-04-12', 5);
+insert into employee (em_name, em_salary, em_date_of_joining, em_dp_id) values ('Henry Clark', 93000.00, '2017-08-20', 1);
+insert into employee (em_name, em_salary, em_date_of_joining, em_dp_id) values ('Ivy Martinez', 48000.00, '2023-02-01', 2);
+insert into employee (em_name, em_salary, em_date_of_joining, em_dp_id) values ('Jack Wilson', 56000.00, '2022-11-15', 3);
+
+-- Skill data
+insert into skill (sk_name) values ('Java');
+insert into skill (sk_name) values ('Spring Boot');
+insert into skill (sk_name) values ('SQL');
+insert into skill (sk_name) values ('React');
+insert into skill (sk_name) values ('Python');
+insert into skill (sk_name) values ('Docker');
+insert into skill (sk_name) values ('AWS');
+
+-- Employee-Skill mapping (Many-to-Many)
+insert into employee_skill (es_em_id, es_sk_id) values (1, 1);
+insert into employee_skill (es_em_id, es_sk_id) values (1, 2);
+insert into employee_skill (es_em_id, es_sk_id) values (1, 3);
+insert into employee_skill (es_em_id, es_sk_id) values (2, 1);
+insert into employee_skill (es_em_id, es_sk_id) values (2, 6);
+insert into employee_skill (es_em_id, es_sk_id) values (3, 3);
+insert into employee_skill (es_em_id, es_sk_id) values (4, 1);
+insert into employee_skill (es_em_id, es_sk_id) values (4, 2);
+insert into employee_skill (es_em_id, es_sk_id) values (4, 7);
+insert into employee_skill (es_em_id, es_sk_id) values (5, 4);
+insert into employee_skill (es_em_id, es_sk_id) values (5, 5);
+insert into employee_skill (es_em_id, es_sk_id) values (6, 3);
+insert into employee_skill (es_em_id, es_sk_id) values (7, 4);
+insert into employee_skill (es_em_id, es_sk_id) values (8, 1);
+insert into employee_skill (es_em_id, es_sk_id) values (8, 2);
+insert into employee_skill (es_em_id, es_sk_id) values (8, 6);
+insert into employee_skill (es_em_id, es_sk_id) values (8, 7);
+insert into employee_skill (es_em_id, es_sk_id) values (9, 3);
+insert into employee_skill (es_em_id, es_sk_id) values (10, 5);

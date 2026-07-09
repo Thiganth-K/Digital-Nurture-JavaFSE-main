@@ -18,5 +18,6 @@ public class LibraryManagementApplication {
         bookService.listBooks();
         
         System.out.println("=== LibraryManagementApplication [Exercise 8] Completed Successfully ===");
+        ((ClassPathXmlApplicationContext) context).close();
     }
 }

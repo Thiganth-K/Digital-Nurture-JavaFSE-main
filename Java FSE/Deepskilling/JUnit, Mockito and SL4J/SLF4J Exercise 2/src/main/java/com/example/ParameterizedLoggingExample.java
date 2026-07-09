@@ -18,6 +18,7 @@ public class ParameterizedLoggingExample {
             // Induce a division by zero exception to log an exception object
             int divisor = 0;
             int result = 42 / divisor;
+            logger.debug("Result is {}", result); // Use the variable to prevent warning
         } catch (ArithmeticException e) {
             // In SLF4J, if the last argument is a Throwable, its stack trace is printed/logged
             logger.error("An arithmetic exception occurred during division for user '{}':", username, e);
