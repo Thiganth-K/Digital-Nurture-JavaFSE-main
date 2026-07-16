@@ -1,0 +1,57 @@
+============================================================
+EXERCISE 6 - TrainersApp | HOL 6: React Router
+============================================================
+Category  : Additional Important
+Topic     : React Router, Routes, Link, useParams, URL params
+App Name  : TrainersApp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+EXECUTION LOG
+------------------------------------------------------------
+$ npm install react-router-dom
+  added 21 packages
+
+$ npm start
+  Compiled successfully!
+  Local: http://localhost:3000
+
+------------------------------------------------------------
+ROUTES DEFINED
+------------------------------------------------------------
+  /            → TrainersList (all trainers table)
+  /trainers    → TrainersList (same)
+  /trainer/:id → TrainerDetail (single trainer by ID)
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  🎓 Trainers App  [Home]  [Trainers]
+  ────────────────────────────────────────────────────
+  👩‍🏫 Trainers Directory
+  T-ID | Name         | Phone      | Email           | Stream        | Skills
+  T001 | Alice Thomas | 9876543210 | alice@cogn..    | React         | JS, React..  [View]
+  T002 | Bob Kumar    | 9876543211 | bob@cogn..      | Java          | Java, Spr..  [View]
+  T003 | Carol Singh  | 9876543212 | carol@cogn..    | Angular       | TS, Angu..   [View]
+  T004 | David Rao    | 9876543213 | david@cogn..    | Python        | Python..     [View]
+  T005 | Eva Nair     | 9876543214 | eva@cogn..      | Microservices | Docker..     [View]
+  T006 | Frank Mehta  | 9876543215 | frank@cogn..    | DevOps        | Jenkins..    [View]
+
+  [Clicking View → navigates to /trainer/T001]
+  ← Back to Trainers List
+  Alice Thomas
+  Trainer ID: T001   Technology: React
+  Email: alice@...   Phone: 9876543210
+  Skills: [JavaScript] [React] [Redux] [HTML5] [CSS3]
+
+------------------------------------------------------------
+KEY CONCEPTS DEMONSTRATED
+------------------------------------------------------------
+  ✔ BrowserRouter, Routes, Route setup
+  ✔ Link component for SPA navigation
+  ✔ useParams() hook for URL parameter extraction
+  ✔ Navigation without page reload (SPA behavior)
+  ✔ Trainer class model & mock data pattern
+
+RESULT: PASS ✅
+============================================================

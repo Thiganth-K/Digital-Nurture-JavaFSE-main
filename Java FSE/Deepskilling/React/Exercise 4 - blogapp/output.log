@@ -1,0 +1,74 @@
+============================================================
+EXERCISE 4 - blogapp | HOL 4: Component Lifecycle Methods
+============================================================
+Category  : Mandatory
+Topic     : componentDidMount(), componentDidCatch(), Fetch API
+App Name  : blogapp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+EXECUTION LOG
+------------------------------------------------------------
+$ npx create-react-app blogapp
+  Success! Created blogapp
+
+$ npm start
+  Compiled successfully!
+  Local: http://localhost:3000
+
+------------------------------------------------------------
+LIFECYCLE SEQUENCE
+------------------------------------------------------------
+  1. constructor()         → State initialized: posts=[], loading=true
+  2. render()              → Renders "Loading posts from API..."
+  3. componentDidMount()   → Calls loadPosts() → fetch() triggered
+     → GET https://jsonplaceholder.typicode.com/posts → 200 OK
+     → 100 posts received, sliced to first 10
+     → setState({ posts: [...], loading: false })
+  4. render()              → Re-renders with 10 posts displayed
+  [Error scenario]
+  5. componentDidCatch()   → alert("An error occurred...")
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  ┌──────────────────────────────────────────────────────┐
+  │  📰 Blog Posts                                       │
+  │  Fetched from: https://jsonplaceholder.typicode.com  │
+  │  ┌────────────────────────────────────────────────┐  │
+  │  │ #1 — sunt aut facere repellat...               │  │
+  │  │ quia et suscipit suscipit recusandae...        │  │
+  │  └────────────────────────────────────────────────┘  │
+  │  ┌────────────────────────────────────────────────┐  │
+  │  │ #2 — qui est esse                              │  │
+  │  │ est rerum tempore vitae sequi...               │  │
+  │  └────────────────────────────────────────────────┘  │
+  │  ... (10 posts total)                                │
+  └──────────────────────────────────────────────────────┘
+
+------------------------------------------------------------
+API CALL
+------------------------------------------------------------
+  URL   : https://jsonplaceholder.typicode.com/posts
+  Method: GET
+  Status: 200 OK
+  Result: 100 posts → display first 10
+
+------------------------------------------------------------
+FILES CREATED
+------------------------------------------------------------
+  src/Post.js   → Post class model (id, title, body, userId)
+  src/Posts.js  → Class component with lifecycle hooks
+  src/App.js    → Renders Posts component
+
+------------------------------------------------------------
+KEY CONCEPTS DEMONSTRATED
+------------------------------------------------------------
+  ✔ componentDidMount() - API call after first render
+  ✔ componentDidCatch() - Error boundary handler
+  ✔ fetch() / Fetch API
+  ✔ setState() for async data
+  ✔ Conditional render: loading / error / data states
+
+RESULT: PASS ✅
+============================================================

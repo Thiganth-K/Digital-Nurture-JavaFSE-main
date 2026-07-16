@@ -1,0 +1,51 @@
+============================================================
+EXERCISE 16 - mailregisterapp | HOL 16: Form Validation
+============================================================
+Category  : Mandatory
+Topic     : Form validation, controlled components, error display
+App Name  : mailregisterapp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+VALIDATION RULES
+------------------------------------------------------------
+  ✔ Name    : length >= 5 characters
+  ✔ Email   : must contain @ AND .
+  ✔ Password: length >= 8 characters
+
+------------------------------------------------------------
+VALIDATION METHOD
+------------------------------------------------------------
+  validate(name, value) {
+    case 'name':     return value.length < 5 ? 'Error...' : ''
+    case 'email':    return (!includes('@') || !includes('.')) ? ...
+    case 'password': return value.length < 8 ? 'Error...' : ''
+  }
+
+  handleChange() → validates on every keystroke (real-time)
+  handleSubmit() → validates all before submit
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  📧 Mail Registration
+  "Create your account"
+  ┌────────────────────────────────────┐
+  │ FULL NAME  [________]             │
+  │ ⚠ Name must have at least 5 chars │
+  │                                   │
+  │ EMAIL ADDRESS [________]          │
+  │ ⚠ Email must contain @ and .      │
+  │                                   │
+  │ PASSWORD  [________]              │
+  │ ⚠ Password must have 8+ chars     │
+  │                                   │
+  │        [Register →]               │
+  └────────────────────────────────────┘
+
+  AFTER VALID SUBMISSION:
+  ✅ Registration Successful!
+  Welcome, Alice!
+
+RESULT: PASS ✅
+============================================================

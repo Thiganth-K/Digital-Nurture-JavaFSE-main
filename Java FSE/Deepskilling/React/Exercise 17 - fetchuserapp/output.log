@@ -1,0 +1,54 @@
+============================================================
+EXERCISE 17 - fetchuserapp | HOL 17: REST API / Fetch
+============================================================
+Category  : Mandatory
+Topic     : fetch(), componentDidMount(), REST API, async data
+App Name  : fetchuserapp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+EXECUTION LOG
+------------------------------------------------------------
+$ npm start → Compiled successfully! → http://localhost:3000
+
+------------------------------------------------------------
+API CALL
+------------------------------------------------------------
+  URL   : https://api.randomuser.me/
+  Method: GET
+  Called in: componentDidMount()
+  Response: JSON with results[0] containing user data
+
+------------------------------------------------------------
+COMPONENT LIFECYCLE
+------------------------------------------------------------
+  1. constructor()       → state: { user:null, loading:true }
+  2. render()            → shows spinner "Fetching user..."
+  3. componentDidMount() → fetch('https://api.randomuser.me/')
+     → .then(res => res.json())
+     → .then(data => setState({ user: data.results[0], loading:false }))
+  4. render()            → displays user card with:
+       - name.title + name.first + name.last
+       - picture.large  (profile image)
+       - email, phone, location.city, dob.age
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  👤 Random User — REST API Demo
+  Source: https://api.randomuser.me/
+
+  [Loading spinner] → then:
+
+  ┌──────────────────────────────────────────────┐
+  │  [Avatar]   Mr. John Smith                   │
+  │             Email:  john.smith@example.com   │
+  │             Phone:  +91-9876-543210           │
+  │             City:   Mumbai, India             │
+  │             Age:    34 years                  │
+  │             Gender: male                      │
+  └──────────────────────────────────────────────┘
+  [🔄 Fetch Another User]
+
+RESULT: PASS ✅
+============================================================

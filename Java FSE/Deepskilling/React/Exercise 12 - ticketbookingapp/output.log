@@ -1,0 +1,44 @@
+============================================================
+EXERCISE 12 - ticketbookingapp | HOL 12: Conditional Rendering
+============================================================
+Category  : Mandatory
+Topic     : Conditional rendering, Login/Logout toggle, element vars
+App Name  : ticketbookingapp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+EXECUTION LOG
+------------------------------------------------------------
+$ npm start → Compiled successfully! → http://localhost:3000
+
+------------------------------------------------------------
+CONDITIONAL RENDERING LOGIC
+------------------------------------------------------------
+  isLoggedIn = false → GuestPage shown (flight list table)
+  isLoggedIn = true  → UserPage shown  (booking section)
+
+  {isLoggedIn ? <UserPage /> : <GuestPage />}
+
+  Login button  → handleLogin()  → setState({ isLoggedIn: true  })
+  Logout button → handleLogout() → setState({ isLoggedIn: false })
+
+------------------------------------------------------------
+BROWSER OUTPUT
+------------------------------------------------------------
+  BEFORE LOGIN:
+  ✈️ SkyBook — Flight Ticket Booking     [Login Button]
+  ✈️ Available Flights
+  Please log in to book a ticket.
+  ┌─────────┬────────┬──────────┬────────────┬──────────┐
+  │ AI 101  │ Delhi  │ Mumbai   │ 08:00 AM   │ ₹ 4,500  │
+  │ SG 202  │ Chennai│ Bangalore│ 10:30 AM   │ ₹ 2,800  │
+  └─────────┴────────┴──────────┴────────────┴──────────┘
+
+  AFTER LOGIN:
+  ✈️ SkyBook — Flight Ticket Booking     [Logout Button]
+  👋 Welcome, John Doe!
+  You are logged in. You can now book flight tickets.
+  [Proceed to Book]
+
+RESULT: PASS ✅
+============================================================

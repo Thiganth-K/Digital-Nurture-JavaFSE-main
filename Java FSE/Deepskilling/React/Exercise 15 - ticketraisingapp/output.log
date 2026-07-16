@@ -1,0 +1,51 @@
+============================================================
+EXERCISE 15 - ticketraisingapp | HOL 15: React Forms
+============================================================
+Category  : Mandatory
+Topic     : Controlled components, form inputs, handleSubmit
+App Name  : ticketraisingapp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+FORM CONTROLS USED
+------------------------------------------------------------
+  <input type="text" />  → Employee Name (textbox)
+  <textarea />           → Complaint description
+  <button type="submit"> → Submit Complaint (handleSubmit)
+
+  Controlled Components:
+  value={empName}     onChange={this.handleChange}
+  value={complaint}   onChange={this.handleChange}
+
+------------------------------------------------------------
+EXECUTION FLOW
+------------------------------------------------------------
+  1. User types name → handleChange() → setState({ empName })
+  2. User types complaint → setState({ complaint })
+  3. User clicks "Submit Complaint"
+     → handleSubmit(e) called
+     → e.preventDefault() → no page reload
+     → Reference number generated: TKT-XXXXXX
+     → alert() shows: "Complaint Registered! Ref: TKT-847291"
+     → Form resets to empty
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  🎫 Complaint Registration
+  "Raise a complaint and get it resolved"
+  ┌─────────────────────────────────────────┐
+  │ Employee Name: [____________]           │
+  │ Complaint:     [___________________]   │
+  │               [                   ]   │
+  │               [___________________]   │
+  │         [📩 Submit Complaint]          │
+  └─────────────────────────────────────────┘
+
+  ALERT: ✅ Complaint Registered Successfully!
+  Employee: John Smith
+  Reference Number: TKT-847291
+  Please use this reference number for further follow-ups.
+
+RESULT: PASS ✅
+============================================================

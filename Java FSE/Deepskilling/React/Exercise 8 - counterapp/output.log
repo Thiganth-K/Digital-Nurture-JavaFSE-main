@@ -1,0 +1,52 @@
+============================================================
+EXERCISE 8 - counterapp | HOL 8: React State
+============================================================
+Category  : Additional Important
+Topic     : State object, setState(), constructor, event binding
+App Name  : counterapp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+EXECUTION LOG
+------------------------------------------------------------
+$ npm start → Compiled successfully! → http://localhost:3000
+
+------------------------------------------------------------
+STATE STRUCTURE
+------------------------------------------------------------
+  this.state = {
+    entryCount: 0,   // incremented by UpdateEntry()
+    exitCount:  0    // incremented by UpdateExit()
+  }
+
+------------------------------------------------------------
+METHODS
+------------------------------------------------------------
+  UpdateEntry() → setState({ entryCount: prev + 1 })
+  UpdateExit()  → setState({ exitCount:  prev + 1 })
+                  (guarded: exitCount cannot exceed entryCount)
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  🏬 Mall People Counter
+  ┌────────────────┐ ┌────────────────┐ ┌────────────────┐
+  │ People Entered │ │ People Exited  │ │  Inside Mall   │
+  │      0         │ │      0         │ │      0         │
+  └────────────────┘ └────────────────┘ └────────────────┘
+  [🚪 Login (Enter)]   [🚪 Exit]
+
+  After clicking Login 3 times, Exit 1 time:
+  Entered: 3 | Exited: 1 | Inside: 2
+
+------------------------------------------------------------
+KEY CONCEPTS DEMONSTRATED
+------------------------------------------------------------
+  ✔ State initialized in constructor
+  ✔ setState() triggers re-render
+  ✔ Binding event handlers in constructor
+  ✔ Derived state (insideMall = entry - exit)
+  ✔ Controlled state updates with validation
+
+RESULT: PASS ✅
+============================================================

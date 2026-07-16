@@ -1,0 +1,46 @@
+============================================================
+EXERCISE 10 - officespacerentalapp | HOL 10: JSX
+============================================================
+Category  : Mandatory
+Topic     : JSX elements, attributes, expressions, inline CSS
+App Name  : officespacerentalapp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+EXECUTION LOG
+------------------------------------------------------------
+$ npm start → Compiled successfully! → http://localhost:3000
+
+------------------------------------------------------------
+JSX FEATURES DEMONSTRATED
+------------------------------------------------------------
+  1. JSX Element (heading)
+     <h1 style={styles.heading}>{officeData.heading}</h1>
+
+  2. JSX Attribute (image)
+     <img src={officeData.imageUrl} alt="Office Space" />
+
+  3. JavaScript Object in JSX
+     const office = { name, rent, address }
+
+  4. JSX List rendering with map()
+     {offices.map(office => <div key={office.id}>...)}
+
+  5. Inline CSS (conditional rent color)
+     const rentColor = office.rent < 60000 ? 'red' : 'green'
+     <span style={{ color: rentColor }}>₹ {rent}</span>
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  Office Space Rental — Available Listings
+  [Hero Image of Office]
+  ┌──────────────────────┐ ┌──────────────────────┐
+  │ TechHub Workspace    │ │ Innovate Co-work     │
+  │ 12 MG Road, BLR      │ │ 5 Connaught Pl, DEL  │
+  │ ₹ 45,000  [🔴 red]  │ │ ₹ 72,000  [🟢 green] │
+  └──────────────────────┘ └──────────────────────┘
+  ... (6 offices total, red<60k, green≥60k)
+
+RESULT: PASS ✅
+============================================================

@@ -1,0 +1,44 @@
+============================================================
+EXERCISE 14 - employeeapp | HOL 14: React Context API
+============================================================
+Category  : Additional Important
+Topic     : createContext(), Provider, useContext(), theme sharing
+App Name  : employeeapp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+CONTEXT API IMPLEMENTATION
+------------------------------------------------------------
+  1. createContext()
+     const ThemeContext = createContext('light');
+
+  2. Provider (App component wraps the tree)
+     <ThemeContext.Provider value={theme}>
+       <EmployeeList />
+     </ThemeContext.Provider>
+
+  3. Consumer (EmployeeCard reads theme without props)
+     const theme = useContext(ThemeContext);
+     → No prop drilling needed!
+
+  4. Theme toggle
+     useState('light') → button toggles 'light'/'dark'
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  LIGHT MODE:
+  🏢 Employee Management System        [🌙 Dark Mode]
+  Active Theme: light
+  ┌───────────────────────────────────────────────────┐
+  │ Alice Johnson  Senior Developer – Engineering [View] │
+  │ Bob Kumar      UI Designer – Design           [View] │
+  │ Carol Singh    QA Engineer – Quality          [View] │
+  └───────────────────────────────────────────────────┘
+
+  DARK MODE (after toggle):
+  Background: #121212, Cards: #2d2d2d, Buttons: #bb86fc
+  All nested components updated via Context (no props)!
+
+RESULT: PASS ✅
+============================================================

@@ -1,0 +1,47 @@
+============================================================
+EXERCISE 13 - bloggerapp | HOL 13: Conditional Rendering (All Ways)
+============================================================
+Category  : Mandatory
+Topic     : 3 ways of conditional rendering, lists & keys, toggle
+App Name  : bloggerapp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+CONDITIONAL RENDERING METHODS USED
+------------------------------------------------------------
+  1. return null  (BookDetails)
+     if (!show) return null;
+     → Component renders nothing when show=false
+
+  2. Ternary operator (BlogDetails)
+     return show ? <JSX /> : null;
+
+  3. Short-circuit && (CourseDetails)
+     return show && <JSX />;
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  📖 Blogger App — Conditional Rendering
+  [Hide Books] [Hide Blogs] [Hide Courses]
+  ───────────────────────────────────────
+  📚 Book Details
+  • Clean Code — Robert C. Martin    [Programming]
+  • The Pragmatic Programmer          [Programming]
+  • Design Patterns — Gang of Four   [Architecture]
+
+  📝 Blog Details
+  • React Hooks Explained  (July 2024 · 5 min)
+  • Why TypeScript?         (July 2024 · 5 min)
+  • REST vs GraphQL         (July 2024 · 5 min)
+
+  🎓 Course Details
+  Course             | Duration | Level
+  React Fundamentals | 30 hrs   | Beginner
+  Advanced JS        | 45 hrs   | Advanced
+  Spring Boot        | 60 hrs   | Intermediate
+
+  [Clicking Hide toggles each section on/off]
+
+RESULT: PASS ✅
+============================================================

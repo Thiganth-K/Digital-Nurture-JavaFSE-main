@@ -1,0 +1,65 @@
+============================================================
+EXERCISE 2 - StudentApp | HOL 2: React Class Components
+============================================================
+Category  : Mandatory
+Topic     : Class components, multiple components, render()
+App Name  : StudentApp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+EXECUTION LOG
+------------------------------------------------------------
+$ npx create-react-app StudentApp
+  Success! Created StudentApp
+
+$ npm start
+  Compiled successfully!
+  Local: http://localhost:3000
+
+------------------------------------------------------------
+COMPONENT TREE
+------------------------------------------------------------
+  App
+  ├── Home     (src/Components/Home.js)
+  ├── About    (src/Components/About.js)
+  └── Contact  (src/Components/Contact.js)
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  ┌──────────────────────────────────────────────────────┐
+  │         Student Management Portal                    │
+  │  ────────────────────────────────────────────────    │
+  │  🏠 Home                                             │
+  │  Welcome to the Home page of Student Management      │
+  │  Portal                                              │
+  │                                                      │
+  │  ℹ️ About                                            │
+  │  Welcome to the About page of the Student            │
+  │  Management Portal                                   │
+  │                                                      │
+  │  📞 Contact                                          │
+  │  Welcome to the Contact page of the Student          │
+  │  Management Portal                                   │
+  └──────────────────────────────────────────────────────┘
+
+------------------------------------------------------------
+FILES CREATED
+------------------------------------------------------------
+  src/App.js                  → Renders Home, About, Contact
+  src/Components/Home.js      → Class component for Home page
+  src/Components/About.js     → Class component for About page
+  src/Components/Contact.js   → Class component for Contact page
+  public/index.html           → HTML template
+
+------------------------------------------------------------
+KEY CONCEPTS DEMONSTRATED
+------------------------------------------------------------
+  ✔ Class-based React components (extends Component)
+  ✔ render() method
+  ✔ Multiple component composition in App.js
+  ✔ Import/export pattern
+  ✔ Inline styles via JavaScript objects
+
+RESULT: PASS ✅
+============================================================

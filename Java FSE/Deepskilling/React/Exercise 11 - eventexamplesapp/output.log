@@ -1,0 +1,48 @@
+============================================================
+EXERCISE 11 - eventexamplesapp | HOL 11: React Events
+============================================================
+Category  : Mandatory
+Topic     : Event handlers, synthetic events, multiple methods, args
+App Name  : eventexamplesapp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+EXECUTION LOG
+------------------------------------------------------------
+$ npm start → Compiled successfully! → http://localhost:3000
+
+------------------------------------------------------------
+EVENTS IMPLEMENTED
+------------------------------------------------------------
+  1. Increment/Decrement Counter
+     onClick={this.increment} → counter + 1
+     onClick={this.decrement} → counter - 1
+
+  2. Multiple Methods on one button (Increase)
+     onClick={this.increaseAndSay}
+     → calls increment() AND sayHello() together
+
+  3. Event with argument (Say Welcome)
+     onClick={() => this.sayWelcome('welcome')}
+     → passes 'welcome' string as argument
+
+  4. Synthetic Event (OnPress)
+     onClick={this.handleOnPress} → e.type = 'click'
+     → displays "Synthetic Event fired! Type: click — I was clicked"
+
+  5. CurrencyConverter (₹ → €)
+     onSubmit={this.handleSubmit}
+     → 1 INR = 0.011 EUR (e.preventDefault() used)
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  ⚡ React Event Handling Examples
+  [1. Counter: - | 0 | +]
+  [2. Increase button → counter + message]
+  [3. Say Welcome → shows "welcome" message]
+  [4. OnPress → Synthetic event message]
+  [5. Currency Converter: 1000 ₹ = 11.0000 €]
+
+RESULT: PASS ✅
+============================================================

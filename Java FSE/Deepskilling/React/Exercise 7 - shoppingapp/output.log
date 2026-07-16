@@ -1,0 +1,51 @@
+============================================================
+EXERCISE 7 - shoppingapp | HOL 7: Props & ReactDOM.render()
+============================================================
+Category  : Additional Important
+Topic     : Props, class properties, ReactDOM.render(), array
+App Name  : shoppingapp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+EXECUTION LOG
+------------------------------------------------------------
+$ npm start → Compiled successfully! → http://localhost:3000
+
+------------------------------------------------------------
+CLASSES DEFINED
+------------------------------------------------------------
+  Cart class:
+    - Itemname : string
+    - Price    : number
+
+  OnlineShopping class:
+    - cartItems[] : Cart[5] initialized in constructor
+    - render()    : loops through items using map()
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  🛒 Online Shopping Cart
+  ┌────┬──────────────────┬───────────────┐
+  │ #  │ Item Name        │ Price (₹)     │
+  ├────┼──────────────────┼───────────────┤
+  │ 1  │ Laptop           │ ₹ 75,000      │
+  │ 2  │ Wireless Mouse   │ ₹ 999         │
+  │ 3  │ USB Keyboard     │ ₹ 1,499       │
+  │ 4  │ HD Monitor       │ ₹ 18,000      │
+  │ 5  │ Webcam           │ ₹ 3,500       │
+  ├────┼──────────────────┼───────────────┤
+  │    │ Total            │ ₹ 98,998      │
+  └────┴──────────────────┴───────────────┘
+
+------------------------------------------------------------
+KEY CONCEPTS DEMONSTRATED
+------------------------------------------------------------
+  ✔ Cart class with Itemname, Price properties
+  ✔ OnlineShopping class with array of Cart objects
+  ✔ ReactDOM.createRoot().render() pattern
+  ✔ map() to loop and display array items
+  ✔ Props passed via JSX attributes
+
+RESULT: PASS ✅
+============================================================

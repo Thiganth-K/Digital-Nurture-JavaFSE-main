@@ -1,0 +1,55 @@
+============================================================
+EXERCISE 5 - cohortapp | HOL 5: CSS Modules & Styling
+============================================================
+Category  : Mandatory
+Topic     : CSS Modules, className, inline styles, tag selectors
+App Name  : cohortapp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+EXECUTION LOG
+------------------------------------------------------------
+$ npm start
+  Compiled successfully!
+  Local: http://localhost:3000
+
+------------------------------------------------------------
+CSS MODULE APPLIED
+------------------------------------------------------------
+  File   : CohortDetails.module.css
+  Class  : .box → width:300px, display:inline-block,
+            margin:10px, padding:10px 20px,
+            border:1px solid black, border-radius:10px
+  Tag    : dt → font-weight:500 (tag selector)
+  Usage  : import styles from './CohortDetails.module.css'
+           <div className={styles.box}>
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  📚 My Academy — Cohort Dashboard
+  ─────────────────────────────────
+  🟢 Ongoing Cohorts
+  ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐
+  │ Java Full Stack  │ │ Spring Boot      │ │ Microservices    │
+  │ Trainer: Bob     │ │ Trainer: Carol   │ │ Trainer: Eva     │
+  │ Status: Ongoing  │ │ Status: Ongoing  │ │ Status: Ongoing  │
+  └──────────────────┘ └──────────────────┘ └──────────────────┘
+
+  ✅ Completed Cohorts
+  ┌──────────────────┐ ┌──────────────────┐
+  │ React Fundament. │ │ Angular Mastery  │
+  │ Status: Complet. │ │ Status: Complet. │
+  └──────────────────┘ └──────────────────┘
+
+------------------------------------------------------------
+KEY CONCEPTS DEMONSTRATED
+------------------------------------------------------------
+  ✔ CSS Module: CohortDetails.module.css
+  ✔ className={styles.box} to apply module class
+  ✔ Tag selector (dt) for font-weight styling
+  ✔ Inline style prop for dynamic conditional colors
+  ✔ Component reuse via props
+
+RESULT: PASS ✅
+============================================================

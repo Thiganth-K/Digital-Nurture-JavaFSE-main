@@ -1,0 +1,59 @@
+============================================================
+EXERCISE 3 - scorecalculatorapp | HOL 3: Function Components
+============================================================
+Category  : Mandatory
+Topic     : Function components, props, CSS stylesheets
+App Name  : scorecalculatorapp
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+EXECUTION LOG
+------------------------------------------------------------
+$ npx create-react-app scorecalculatorapp
+  Success! Created scorecalculatorapp
+
+$ npm start
+  Compiled successfully!
+  Local: http://localhost:3000
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+  ┌──────────────────────────────────────────────────────┐
+  │              Score Calculator                        │
+  │  ┌────────────────────────────────────────────────┐  │
+  │  │ Alice Johnson                                  │  │
+  │  │ School         Greenwood High                  │  │
+  │  │ Total Marks    450 / 500                       │  │
+  │  │ Average Score  90.00%                          │  │
+  │  │ Goal           400                             │  │
+  │  │ Goal Status    Achieved ✅                     │  │
+  │  └────────────────────────────────────────────────┘  │
+  │  ┌────────────────────────────────────────────────┐  │
+  │  │ Bob Smith                                      │  │
+  │  │ School         Riverside Academy               │  │
+  │  │ Total Marks    370 / 500                       │  │
+  │  │ Average Score  74.00%                          │  │
+  │  │ Goal           400                             │  │
+  │  │ Goal Status    Not Achieved ❌                 │  │
+  │  └────────────────────────────────────────────────┘  │
+  └──────────────────────────────────────────────────────┘
+
+------------------------------------------------------------
+FILES CREATED
+------------------------------------------------------------
+  src/App.js                       → Renders 3 CalculateScore instances
+  src/Components/CalculateScore.js → Functional component accepting props
+  src/Stylesheets/mystyle.css      → Card layout and DL styling
+
+------------------------------------------------------------
+KEY CONCEPTS DEMONSTRATED
+------------------------------------------------------------
+  ✔ Functional (arrow-less) React component
+  ✔ Props destructuring { Name, School, Total, Goal }
+  ✔ CSS Module (external stylesheet) import
+  ✔ Conditional styling based on props data
+  ✔ Multiple component instances with different props
+
+RESULT: PASS ✅
+============================================================

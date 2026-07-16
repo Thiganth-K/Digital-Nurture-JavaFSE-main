@@ -1,0 +1,51 @@
+============================================================
+EXERCISE 1 - myfirstreact | HOL 1: React Setup & Hello World
+============================================================
+Category  : Mandatory
+Topic     : Setting up React environment, create-react-app
+App Name  : myfirstreact
+Status    : COMPLETED ✅
+
+------------------------------------------------------------
+EXECUTION LOG
+------------------------------------------------------------
+$ npx create-react-app myfirstreact
+  Creating a new React app in ./myfirstreact...
+  Installing packages. This might take a couple of minutes.
+  Installing react, react-dom, and react-scripts...
+  Success! Created myfirstreact
+
+$ cd myfirstreact
+$ npm start
+  Compiled successfully!
+  Local: http://localhost:3000
+
+------------------------------------------------------------
+BROWSER OUTPUT (http://localhost:3000)
+------------------------------------------------------------
+┌─────────────────────────────────────────────────────────┐
+│                                                         │
+│   Welcome to the first session of React                 │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+
+------------------------------------------------------------
+FILES CREATED
+------------------------------------------------------------
+  src/App.js        → Main component with h1 heading
+  src/index.js      → ReactDOM.createRoot entry point
+  src/index.css     → Body styling (dark background)
+  public/index.html → HTML shell with <div id="root">
+  package.json      → Dependencies: react, react-dom, react-scripts
+
+------------------------------------------------------------
+KEY CONCEPTS DEMONSTRATED
+------------------------------------------------------------
+  ✔ SPA (Single Page Application) architecture
+  ✔ React virtual DOM concept
+  ✔ create-react-app toolchain
+  ✔ ReactDOM.createRoot() / root.render()
+  ✔ JSX syntax: <h1>...</h1> in return()
+
+RESULT: PASS ✅
+============================================================
