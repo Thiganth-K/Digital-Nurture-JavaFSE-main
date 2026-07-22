@@ -1,0 +1,82 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260722183001
+Username: LAPTOP-677U04UP\THIGANTH
+RunAs User: LAPTOP-677U04UP\THIGANTH
+Configuration Name: 
+Machine: LAPTOP-677U04UP (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -File run_exercise.ps1
+Process ID: 22080
+PSVersion: 5.1.26100.8875
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8875
+BuildVersion: 10.0.26100.8875
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\GIT\Exercise_3_Branching_Merging\proof.log
+=== Exercise 3: Branching & Merging ===
+Current Time: 07/22/2026 18:30:01
+
+Step 1: Initialize Git Repository 'GitBranchDemo'
+
+
+Step 2: Commit initial master file to establish trunk
+
+
+
+Step 3: Create a new branch 'GitNewBranch'
+
+Branch 'GitNewBranch' created.
+
+Step 4: List all local branches (Observe the '*' indicating current branch)
+
+
+Step 5: Switch to the newly created branch 'GitNewBranch'
+
+Checked out branch list:
+
+
+Step 6: Add files to the branch with contents
+
+Step 7: Commit the changes in the branch
+
+
+
+Step 8: Check status in branch
+
+
+Step 9: Switch back to master
+
+Switched back to master branch list:
+
+
+Step 10: List out all differences between master and branch
+
+
+Step 11: Configure visual merge tool settings for P4Merge (Conceptual)
+
+
+
+Local diff tool configuration set to p4merge.
+
+Step 12: Merge the branch 'GitNewBranch' to master (trunk)
+
+
+Step 13: Observe the commit graph log after merging
+
+
+Step 14: Delete the branch after merging and check status
+
+Deleted branch GitNewBranch successfully.
+Branch list after deletion:
+
+Status after deletion:
+
+
+**********************
+Windows PowerShell transcript end
+End time: 20260722183002
+**********************

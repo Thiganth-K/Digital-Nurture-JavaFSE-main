@@ -1,0 +1,83 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260722183109
+Username: LAPTOP-677U04UP\THIGANTH
+RunAs User: LAPTOP-677U04UP\THIGANTH
+Configuration Name: 
+Machine: LAPTOP-677U04UP (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -File run_exercise.ps1
+Process ID: 10152
+PSVersion: 5.1.26100.8875
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8875
+BuildVersion: 10.0.26100.8875
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\GIT\Exercise_5_Remote_Operations\proof.log
+=== Exercise 5: Remote Operations ===
+Current Time: 07/22/2026 18:31:09
+
+Step 1: Set up a simulated Remote Repository (Bare Git Repository)
+
+Simulated remote repository (RemoteDemo.git) initialized.
+
+Step 2: Initialize local Git repository 'LocalDemo'
+
+
+Step 3: Link 'LocalDemo' to simulated remote repository
+
+Remote 'origin' added pointing to ../RemoteDemo.git
+
+Step 4: Verify if master is in a clean state (No commits yet)
+
+
+Step 5: Add a file and create initial commit locally
+
+
+Master status after commit:
+
+
+Step 6: List out all available branches (before pushing)
+
+
+Step 7: Push the changes to the remote repository
+
+
+Step 8: Simulate a collaborator making changes on the remote
+
+
+
+
+Collaborator pushed updates to the remote repository.
+
+Step 9: Return to 'LocalDemo' and verify status is clean
+
+
+Step 10: Pull the remote repository to the master branch
+
+
+Step 11: Verify that changes are pulled and reflected locally
+Local file list:
+
+
+    Directory: D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java
+    FSE\Deepskilling\GIT\Exercise_5_Remote_Operations\LocalDemo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        22-07-2026     06:31             40 collaborator_notes.txt
+-a----        22-07-2026     06:31             36 welcome.txt
+Content of collaborator_notes.txt:
+Added project notes from collaborator.
+
+Step 12: List all branches including remote tracking branches
+
+
+**********************
+Windows PowerShell transcript end
+End time: 20260722183110
+**********************

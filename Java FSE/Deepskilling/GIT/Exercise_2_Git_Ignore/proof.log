@@ -1,0 +1,75 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260722182926
+Username: LAPTOP-677U04UP\THIGANTH
+RunAs User: LAPTOP-677U04UP\THIGANTH
+Configuration Name: 
+Machine: LAPTOP-677U04UP (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -File run_exercise.ps1
+Process ID: 4752
+PSVersion: 5.1.26100.8875
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8875
+BuildVersion: 10.0.26100.8875
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\GIT\Exercise_2_Git_Ignore\proof.log
+=== Exercise 2: Git Ignore ===
+Current Time: 07/22/2026 18:29:26
+
+Step 1: Initialize Git Repository 'GitIgnoreDemo'
+
+
+Step 2: Create a dummy text file to commit first
+
+
+
+
+Step 3: Create a '.log' file and a 'log' folder with files
+Files in working directory before gitignore:
+
+
+    Directory: D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java
+    FSE\Deepskilling\GIT\Exercise_2_Git_Ignore\GitIgnoreDemo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        22-07-2026     06:29                log
+-a----        22-07-2026     06:29             52 app.log
+-a----        22-07-2026     06:29             26 main.txt
+
+
+    Directory: D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java
+    FSE\Deepskilling\GIT\Exercise_2_Git_Ignore\GitIgnoreDemo\log
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        22-07-2026     06:29             28 debug.txt
+
+Step 4: Check git status before updating .gitignore
+
+
+Step 5: Create and configure .gitignore
+Content of .gitignore:
+*.log
+log/
+
+Step 6: Check git status after creating .gitignore
+
+
+Step 7: Add and commit .gitignore
+
+
+
+Step 8: Final status check
+
+
+**********************
+Windows PowerShell transcript end
+End time: 20260722182926
+**********************

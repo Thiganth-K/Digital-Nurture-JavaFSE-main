@@ -1,0 +1,80 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260722182846
+Username: LAPTOP-677U04UP\THIGANTH
+RunAs User: LAPTOP-677U04UP\THIGANTH
+Configuration Name: 
+Machine: LAPTOP-677U04UP (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -File run_exercise.ps1
+Process ID: 22116
+PSVersion: 5.1.26100.8875
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8875
+BuildVersion: 10.0.26100.8875
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\GIT\Exercise_1_Git_Basics\proof.log
+=== Exercise 1: Git Basics ===
+Current Time: 07/22/2026 18:28:46
+
+Step 1: Check if Git is installed
+
+
+Step 2: Configure User Name & Email
+
+
+Configured user.name: HandsOn Student
+Configured user.email: student@handson.com
+
+Step 3: Verify configuration setting
+
+
+Step 4: Configure Notepad++ as default editor (with notepad fallback)
+
+Notepad++ not found. Fallback to Windows Notepad configured.
+Default editor configured: notepad
+
+Step 5: Initialize Git Repository 'GitDemo'
+
+
+Step 6: Display hidden files in GitDemo repository
+
+
+    Directory: D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java
+    FSE\Deepskilling\GIT\Exercise_1_Git_Basics\GitDemo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d--h--        22-07-2026     06:28                .git
+
+Step 7: Create a file 'welcome.txt' with content
+
+Step 8: Verify file creation and content
+File exists check:
+-a----        22-07-2026     06:28             16 welcome.txt
+File content:
+Welcome to Git
+
+Step 9: Check git status before adding file
+
+
+Step 10: Stage the file 'welcome.txt'
+
+Staged successfully.
+
+Step 11: Commit the file with a message
+
+
+Step 12: Check git status after committing
+
+
+
+
+**********************
+Windows PowerShell transcript end
+End time: 20260722182846
+**********************

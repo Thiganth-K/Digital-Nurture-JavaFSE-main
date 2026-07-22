@@ -1,0 +1,98 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260722183033
+Username: LAPTOP-677U04UP\THIGANTH
+RunAs User: LAPTOP-677U04UP\THIGANTH
+Configuration Name: 
+Machine: LAPTOP-677U04UP (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -File run_exercise.ps1
+Process ID: 6100
+PSVersion: 5.1.26100.8875
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8875
+BuildVersion: 10.0.26100.8875
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\IMPORTANT_FILES\PROJECT_FILES\Digital-Nurture-JavaFSE-main\Java FSE\Deepskilling\GIT\Exercise_4_Conflict_Resolution\proof.log
+=== Exercise 4: Conflict Resolution ===
+Current Time: 07/22/2026 18:30:33
+
+Step 1: Initialize Git Repository 'GitConflictDemo'
+
+
+Step 2: Commit initial master file to establish trunk
+
+
+Master status check:
+
+
+Step 3: Create branch 'GitWork'
+
+
+Step 4: Create and commit hello.xml in GitWork branch
+Branch file hello.xml created. Status:
+
+
+
+
+Step 5: Switch back to master
+
+
+Step 6: Create hello.xml on master branch with conflicting contents
+Master file hello.xml created. Status:
+
+
+
+
+Step 7: Observe commit log history of all branches
+
+
+Step 8: Check differences between master and branch before merge
+
+
+Step 9: Merge 'GitWork' into master (expected conflict)
+
+
+Step 10: Observe conflict markup in hello.xml
+<root>
+<<<<<<< HEAD
+    <message>Hello from Master branch (Conflicting Content)</message>
+=======
+    <message>Hello from GitWork branch</message>
+>>>>>>> GitWork
+</root>
+
+Step 11: Check git status during conflict state
+
+
+Step 12: Resolve the conflict programmatically (manual merge edit)
+Resolved file hello.xml content:
+<root>
+    <message>Hello from Master branch (Conflicting Content)</message>
+    <message>Hello from GitWork branch</message>
+</root>
+
+Step 13: Stage and commit the resolved conflict
+
+
+
+Step 14: Add backup files (*.orig) to .gitignore and commit
+
+
+Git status check:
+
+
+Step 15: Delete branch 'GitWork'
+
+Deleted branch successfully.
+
+Step 16: Observe final commit log graph after merge conflict resolution
+
+
+**********************
+Windows PowerShell transcript end
+End time: 20260722183034
+**********************
