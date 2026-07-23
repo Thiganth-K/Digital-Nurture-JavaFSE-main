@@ -1,0 +1,52 @@
+<div class="course-list-container animate-fade-in">
+  <div class="list-header glass-panel">
+    <h2>Available Course Directory</h2>
+    <p>Explore our curriculum offerings and select modules to build your path. Standout modules have a special credit badge.</p>
+    
+    <!-- Real-time search filter input -->
+    <div class="search-bar">
+      <input 
+        [(ngModel)]="searchTerm" 
+        (ngModelChange)="onSearchChange()"
+        placeholder="Type to filter courses dynamically..." 
+        class="search-input">
+    </div>
+
+    <!-- Enrollment Announcement -->
+    <div class="selection-banner animate-fade-in" *ngIf="selectedCourseId">
+      <p>🎯 Selected Course Reference ID: <strong>{{ selectedCourseId }}</strong> (State updated successfully)</p>
+    </div>
+  </div>
+
+  <!-- Global Error Display Banner -->
+  <div class="error-banner-alert glass-panel animate-fade-in" *ngIf="errorMessage$ | async as errorMessage">
+    <h4>⚠️ Catalog Access Interrupted</h4>
+    <p>{{ errorMessage }}</p>
+  </div>
+
+  <!-- Loading State Indicator -->
+  <div class="loading-state glass-panel" *ngIf="(isLoading$ | async) && !(errorMessage$ | async); else courseGrid">
+    <div class="spinner"></div>
+    <p>Retrieving course catalog from NgRx state store...</p>
+  </div>
+
+  <!-- Course Card Grid -->
+  <ng-template #courseGrid>
+    <div class="grid-container" *ngIf="(filteredCourses$ | async)?.length; else noCourses">
+      <!-- Bind click to goToDetail navigation, and load card list via async pipe -->
+      <app-course-card 
+        *ngFor="let c of (filteredCourses$ | async); trackBy: trackByCourseId"
+        [course]="c"
+        (click)="goToDetail(c.id)"
+        (enrollRequested)="onEnroll($event)">
+      </app-course-card>
+    </div>
+  </ng-template>
+
+  <!-- Empty State Template -->
+  <ng-template #noCourses>
+    <div class="empty-state glass-panel animate-fade-in" *ngIf="!(errorMessage$ | async) && !(isLoading$ | async)">
+      <p>No courses match your active search filter: "{{ searchTerm }}".</p>
+    </div>
+  </ng-template>
+</div>

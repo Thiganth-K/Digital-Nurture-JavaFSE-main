@@ -1,0 +1,46 @@
+<div class="detail-container animate-fade-in">
+  <!-- Error Banner -->
+  <div class="not-found-panel glass-panel animate-fade-in" *ngIf="errorMessage">
+    <h3>⚠️ Details Access Interrupted</h3>
+    <p>{{ errorMessage }}</p>
+    <a routerLink="/courses" class="btn-primary">Return to Directory</a>
+  </div>
+
+  <div class="detail-card glass-panel" *ngIf="course && !errorMessage; else courseNotFound">
+    <div class="detail-header">
+      <span class="detail-code">{{ course.code }}</span>
+      <span class="badge" [class.badge-passed]="course.gradeStatus === 'passed'" [class.badge-failed]="course.gradeStatus === 'failed'" [class.badge-pending]="course.gradeStatus === 'pending'">
+        {{ course.gradeStatus }}
+      </span>
+    </div>
+
+    <h2 class="detail-title">{{ course.name }}</h2>
+    
+    <div class="detail-info">
+      <div class="info-item">
+        <span class="label">Course Status:</span>
+        <span class="value">{{ course.enrolled ? 'Enrolled' : 'Not Enrolled' }}</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Academic Credits:</span>
+        <span class="value">{{ course.credits | creditLabel }}</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Credits Level:</span>
+        <span class="value">{{ course.credits >= 4 ? 'Advanced (Tier 1)' : 'Standard (Tier 2)' }}</span>
+      </div>
+    </div>
+
+    <div class="detail-actions">
+      <a routerLink="/courses" class="btn-secondary">← Back to Course Directory</a>
+    </div>
+  </div>
+
+  <ng-template #courseNotFound>
+    <div class="not-found-panel glass-panel" *ngIf="!errorMessage">
+      <h3>Course Record Not Found</h3>
+      <p>The course ID requested does not match any current record inside our system directory.</p>
+      <a routerLink="/courses" class="btn-primary">Return to Catalog</a>
+    </div>
+  </ng-template>
+</div>

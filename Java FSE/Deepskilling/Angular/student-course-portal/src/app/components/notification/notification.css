@@ -1,0 +1,35 @@
+.notification-widget {
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.alert-item {
+  font-size: 0.85rem;
+  font-family: monospace;
+  padding: 0.4rem 0.6rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed var(--border-color);
+  border-radius: 6px;
+  color: var(--warning-color);
+}
+
+.add-alert-btn {
+  align-self: flex-start;
+}

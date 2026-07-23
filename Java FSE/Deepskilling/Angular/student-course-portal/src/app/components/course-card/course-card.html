@@ -1,0 +1,29 @@
+<div class="course-card glass-panel" [appHighlight]="appHighlight || 'rgba(99, 102, 241, 0.12)'" [class.card--enrolled]="(enrolledIds$ | async)?.includes(course.id)" [class.card--full]="course.credits >= 4" [class.expanded]="isExpanded" [ngStyle]="{'border-left': '6px solid ' + (course.gradeStatus === 'passed' ? '#10b981' : course.gradeStatus === 'failed' ? '#ef4444' : '#9b9fb7')}">
+  <div class="card-header">
+    <span class="course-code">{{ course.code }}</span>
+    <!-- ngSwitch Badge -->
+    <div [ngSwitch]="course.gradeStatus">
+      <span *ngSwitchCase="'passed'" class="badge badge-passed">Passed</span>
+      <span *ngSwitchCase="'failed'" class="badge badge-failed">Failed</span>
+      <span *ngSwitchDefault class="badge badge-pending">Pending</span>
+    </div>
+  </div>
+  
+  <h3 class="course-name">{{ course.name }}</h3>
+  <p class="credits">{{ course.credits | creditLabel }}</p>
+
+  <div class="card-details" *ngIf="isExpanded">
+    <p class="detail-text">Course ID: {{ course.id }}</p>
+    <p class="detail-text">Credits status: {{ course.credits >= 4 ? 'Advanced Module' : 'Standard Module' }}</p>
+    <p class="detail-text">Status: {{ (enrolledIds$ | async)?.includes(course.id) ? 'Enrolled' : 'Not Enrolled' }}</p>
+  </div>
+
+  <div class="card-footer">
+    <button (click)="toggleExpand($event)" class="btn-secondary btn-sm">
+      {{ isExpanded ? 'Hide Details' : 'Show Details' }}
+    </button>
+    <button (click)="onEnrollClick($event)" [class.btn-primary]="!(enrolledIds$ | async)?.includes(course.id)" [class.btn-secondary]="(enrolledIds$ | async)?.includes(course.id)">
+      {{ (enrolledIds$ | async)?.includes(course.id) ? 'Unenroll' : 'Enroll' }}
+    </button>
+  </div>
+</div>

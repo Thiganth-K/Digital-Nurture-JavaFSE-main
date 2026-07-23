@@ -1,0 +1,80 @@
+.form-container {
+  max-width: 600px;
+  margin: 1.5rem auto;
+}
+
+.form-card {
+  padding: 2.5rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500 !important;
+}
+
+.checkbox-input {
+  width: auto;
+  margin-top: 0.2rem;
+}
+
+.error-container {
+  min-height: 1.25rem;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+}
+
+.success-banner {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.success-banner h4 {
+  color: var(--success-color);
+  margin-bottom: 0.5rem;
+}
+
+.success-banner p {
+  color: var(--text-secondary);
+  margin-bottom: 0;
+  font-size: 0.92rem;
+}

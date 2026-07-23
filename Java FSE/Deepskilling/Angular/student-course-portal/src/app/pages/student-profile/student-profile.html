@@ -1,0 +1,54 @@
+<div class="profile-container animate-fade-in">
+  <div class="profile-card glass-panel">
+    <div class="profile-header">
+      <div class="avatar">HS</div>
+      <div class="meta">
+        <h2>{{ student.name }}</h2>
+        <p class="role">Student ID: {{ student.studentId }}</p>
+      </div>
+    </div>
+
+    <div class="profile-body">
+      <div class="info-row">
+        <span class="info-label">Email Address:</span>
+        <span class="info-value">{{ student.email }}</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Academic Program:</span>
+        <span class="info-value">{{ student.major }}</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Active Semester:</span>
+        <span class="info-value">{{ student.semester }}</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Cumulative GPA:</span>
+        <span class="info-value gpa">{{ student.gpa | number:'1.1-2' }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="enrollments-card glass-panel">
+    <h3>Registered Course Enrollments</h3>
+    
+    <!-- Read enrollments stream using async pipe -->
+    <div class="enrollments-list" *ngIf="(enrolledCourses$ | async)?.length; else emptyEnrollments">
+      <div class="enrolled-item" *ngFor="let course of enrolledCourses$ | async">
+        <div class="item-meta">
+          <span class="item-code">{{ course.code }}</span>
+          <span class="item-name">{{ course.name }}</span>
+        </div>
+        <span class="item-credits">{{ course.credits | creditLabel }}</span>
+      </div>
+    </div>
+    
+    <ng-template #emptyEnrollments>
+      <div class="empty-enrollments-state">
+        <p>No active registrations found. Please navigate to the Courses directory to enroll.</p>
+      </div>
+    </ng-template>
+
+    <!-- Component-Scoped DI Notification Widget -->
+    <app-notification></app-notification>
+  </div>
+</div>

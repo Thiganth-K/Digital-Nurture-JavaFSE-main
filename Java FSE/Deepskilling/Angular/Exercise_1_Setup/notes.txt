@@ -1,0 +1,39 @@
+========================================================================
+ANGULAR WORKSPACE FILES EXPLANATION - STUDENT COURSE PORTAL
+========================================================================
+
+1. angular.json
+   Controls the configuration for the Angular CLI workspace, specifying project builds, testing configurations, paths to assets/styles/scripts, default environments, and build pipelines.
+
+2. tsconfig.json
+   The root TypeScript configuration file containing workspace-level settings that govern how compiler options are applied globally across all code, tests, and apps.
+
+3. tsconfig.app.json
+   The application-specific TypeScript configuration which inherits from the root tsconfig.json but overrides parameters specifically to build the main web application bundle.
+
+4. package.json
+   Lists project metadata, script commands (e.g. start, build, test), and package dependency definitions for npm packages needed in both development and runtime.
+
+5. src/main.ts
+   The entry point of the entire application. It bootstraps either the root component (in standalone mode, such as AppComponent) or the root module into the browser.
+
+6. src/app/app.config.ts
+   Defines the application-wide configuration settings and providers (e.g. routing providers, interceptors, animations, etc.) for bootstrapping the root component in standalone mode.
+
+7. src/app/app.ts (Root Component file, AppComponent counterpart)
+   The root component containing the main layout, class definitions, and bindings that wrap all child components of the Angular application.
+
+8. src/index.html
+   The main HTML template index file loaded by the browser, inside which Angular injects the root component output and compiled bundle scripts during rendering.
+
+========================================================================
+BUDGETS CONFIGURATION EXPLANATION
+========================================================================
+Located under project > architect > build > configurations > production:
+- "initial":
+  * maximumWarning: "500kB" - Issues a warning during build compilation if the total size of the initial bundle exceeds 500kB.
+  * maximumError: "1MB" - Fails the build compilation if the initial bundle size exceeds 1MB.
+- "anyComponentStyle":
+  * maximumWarning: "4kB" - Warns during build compilation if any single component style stylesheet exceeds 4kB.
+  * maximumError: "8kB" - Fails the build compilation if any single component style stylesheet exceeds 8kB.
+These thresholds ensure that application bundle sizes remain optimized and do not compromise client-side page load times.

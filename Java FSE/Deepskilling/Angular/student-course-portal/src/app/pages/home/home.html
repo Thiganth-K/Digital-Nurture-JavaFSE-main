@@ -1,0 +1,51 @@
+<div class="home-container animate-fade-in">
+  <div class="hero-section glass-panel">
+    <h1>Welcome to the {{ portalName }}</h1>
+    <p class="subtitle">Access your course modules, enrollment forms, academic profiles, and grades all in one cohesive dashboard.</p>
+    
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-label">Courses Available</span>
+        <span class="stat-value">{{ coursesCount$ | async }}</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Enrolled</span>
+        <span class="stat-value">{{ enrolledCount$ | async }}</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">GPA</span>
+        <span class="stat-value accent">{{ gpa | number:'1.1-2' }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions-section">
+    <!-- Search Box (Two-Way Binding Demonstration) -->
+    <div class="action-card glass-panel">
+      <h3>Quick Search</h3>
+      <p>Search and filter available courses instantly.</p>
+      <div class="search-box">
+        <input [(ngModel)]="searchTerm" placeholder="Type to search (e.g. Angular, Java)..." class="search-input">
+      </div>
+      <!-- Live Search Term display -->
+      <p class="live-search-display" *ngIf="searchTerm">
+        Searching for: <span class="search-highlight">{{ searchTerm }}</span>
+      </p>
+    </div>
+
+    <!-- Enrollment Request Box -->
+    <div class="action-card glass-panel">
+      <h3>Enrollment Status</h3>
+      <p>Initiate your academic registration requests for the current semester.</p>
+      <div class="enroll-action">
+        <button [disabled]="!isPortalActive" (click)="onEnrollClick()" class="btn-primary">
+          Enroll Now
+        </button>
+      </div>
+      <!-- Enrollment Status message -->
+      <div class="enroll-message animate-fade-in" *ngIf="message">
+        {{ message }}
+      </div>
+    </div>
+  </div>
+</div>

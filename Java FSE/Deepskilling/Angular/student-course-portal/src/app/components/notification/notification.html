@@ -1,0 +1,14 @@
+<div class="notification-widget glass-panel">
+  <h4>System Notifications</h4>
+  <p class="desc">A component-scoped data store demonstrating DI hierarchy.</p>
+  
+  <div class="alerts-list">
+    <div class="alert-item animate-fade-in" *ngFor="let note of notifications">
+      {{ note }}
+    </div>
+  </div>
+
+  <button (click)="triggerAlert()" class="btn-secondary btn-sm add-alert-btn">
+    Trigger Test Alert
+  </button>
+</div>
